@@ -768,4 +768,41 @@ header {
     .category {
         display: grid;
     }
+
+    .footer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        height: 75rem;
+    }
+
+     .footer_copyright{
+        display: flex;
+        margin-top: -.6rem;
+        font-size: 7px;
+    }
+
+     .footer_copyright .links a {
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+
+     .footer_more {
+        font-size: 7px;
+        margin-top: 1rem;
+        padding-top: 10px;
+        border-bottom: .1rem solid gray;
+        padding-bottom: 5px;
+    }
+
+    .footer ul {
+        font-size: 10px
+    }
+
+    .footer_links-column-title {
+        font-size: 10px;
+    }
+
+    .footer_links-column a {
+        font-size: 9px;
+    }
 }

@@ -499,7 +499,6 @@ header {
         line-height: 1.125;
         padding-right: 0rem;
     }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -840,5 +839,12 @@ header {
 
     .footer_links-column a {
         font-size: 9px;
+        margin-bottom: 8px;
+    }
+
+    .footer_links-column a {
+        font-size: 9px;
+        color: #515154;
+        margin-bottom: 7px;
     }
 }

@@ -1,0 +1,771 @@
+/*global*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+/*header*/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgba(0, 0, 1, 0.793);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: rgba(244, 240, 240, 0.753);
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link:hover {
+    opacity: .9;
+    color: rgb(244, 240, 240)
+}
+
+.nav-link-apple {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/hero/icons/apple.svg") center no-repeat;
+}
+
+.nav-link-search {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/hero/icons/search.svg") center no-repeat;
+}
+
+.nav-link-bag {
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url("images/hero/icons/bag.svg") center no-repeat;
+}
+
+/*ipad section*/
+.ipad {
+    background: url("images/hero/ipad/ipad large.jpeg");
+}
+
+.title {
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding-top: 6.5rem;
+    line-height: 1.125;
+}
+
+.title-ipad {
+    padding-left: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 22rem;
+}
+
+.title-heading {
+    font-size: 47px;
+    line-height: 1.07143;
+    letter-spacing: .004rem;
+    font-weight: 500;
+}
+
+.title-sub-heading {
+    font-size: 32px;
+    margin-top: 2.6rem;
+    letter-spacing: 0rem;
+    font-weight: 400;
+    line-height: 1.21053
+}
+
+.title-price {
+    font-size: 18px;
+    color: #6e6e73;
+    margin-top: 13px;
+    font-weight: 400;
+}
+
+.cta-ipad {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.cta-ipad-link {
+    color: #06c;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.cta-ipad-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-ipad-link:hover {
+    border-bottom: 2px solid #06c;
+}
+
+/*ipad pro section*/
+.ipad-pro {
+    background: url("images/hero/ipad pro/ipad pro large.jpeg");
+}
+
+.title-sub-heading-logo {
+    font-size: 21px;
+    line-height: 1.21053;
+    color: rgb(244, 240, 240);
+    letter-spacing: 0rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.title-sub-heading-logo-m2 {
+    height: 45px;
+    width: 45px;
+    background: url("images/hero/ipad pro/m2 logo.png") no-repeat;
+    background-size: 45px 45px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+.title-dark {
+    font-size: 49px;
+    color: rgb(244, 240, 240);
+    padding-right: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30rem;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 20px
+}
+
+.cta-link-darker {
+    color: #1376c7;
+}
+
+.cta-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-link-darker:hover {
+    border-bottom: 2px solid #0d5ea0;
+}
+
+/*tv4k*/
+.tv-tv4k {
+    background: url("images/hero/tv4k/tv large.jpeg") no-repeat;
+}
+
+.title-heading-tv4k {
+    height: 4.2rem;
+    background: url("images/hero/tv4k/tvlogo.png") center no-repeat;
+    background-size: auto 4.2rem;
+    margin-top: 36rem;
+}
+
+.tv-img {
+    background: url("images/hero/tv4k/remote small.jpeg") no-repeat;
+}
+
+.cta-link {
+    color: #06c;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.cta-link:hover {
+    border-bottom: 2px solid rgb(9, 78, 146);
+}
+
+/*Moved to the bottom of all section styles to keep consistant styles*/
+.hero {
+    height: 65.2rem;
+    background-size: auto 65.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+}
+
+.ipad {
+    border-top: none;
+}
+
+.category {
+    display: flex;
+}
+
+.category .box {
+    text-align: center;
+    width: 50%;
+    margin: 10px;
+    background-size: cover;
+    padding-top: 20px;
+    color: #fff;
+    height: 58.4rem;
+    background-size: auto 63.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box1 {
+    background-image: url("images/grid/iphone14pro/iphone14 pro large.jpeg");
+}
+
+#box2 {
+    background-image: url("images/grid/iphone14/i14 large.jpeg");
+}
+
+#box3 {
+    background-image: url("images/grid/watch_ultra/watch ultra large.jpeg");
+}
+
+#box4 {
+    background-image: url("images/grid/watch8/watch8 large.jpeg");
+}
+
+#box5 {
+    background-image: url("images/grid/airpod/airpod large.jpeg");
+}
+
+#box6 {
+    background-image: url("images/grid/card/card large.jpeg");
+}
+
+.image {
+    color: rgb(248, 242, 242);
+    text-align: center;
+    padding-top: 5.5rem;
+    line-height: 1.125;
+}
+
+.image-name {
+    font-size: 45px;
+    line-height: 1.07143;
+    letter-spacing: .004rem;
+    margin-top: .6rem;
+    font-weight: 500;
+}
+
+.image-name-dark {
+    color: black;
+}
+
+.name-sub-heading {
+    font-size: 18px;
+    margin-top: .6rem;
+    letter-spacing: 0rem;
+    font-weight: 400;
+    line-height: 1.21053;
+}
+
+.name-sub-heading-dark {
+    color: black;
+}
+
+.name-sub-heading-light {
+    color: white;
+}
+
+.cta-image {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.cta-image-link {
+    color: #06c;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.cta-image-link:hover {
+    border-bottom: 1px solid #06c;
+}
+
+.cta-image-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-image-link-darker:hover {
+    border-bottom: 1px solid #0070c9;
+}
+
+.image-series {
+    color: rgb(211, 95, 6);
+}
+
+.image-series-dark {
+    color: red
+}
+
+.watch-ultra-image {
+    height: 4.8rem;
+    background: url("images/logo/watch_ultra.png") center no-repeat;
+    background-size: auto 4.8rem;
+    padding-top: 5px;
+}
+
+.watch8-img {
+    height: 4.8rem;
+    background: url("images/logo/watch8.png") center no-repeat;
+    background-size: auto 4.8rem;
+    padding-top: 5px;
+}
+
+.icard {
+    height: 2.8rem;
+    background: url("images/logo/card.png") center no-repeat;
+    background-size: auto 2.8rem;
+    padding-top: 5px;
+}
+
+/* Footer */
+
+.footer {
+    height: 705px;
+    background: rgba(248, 245, 245, 0.99);
+    display: flex;
+    justify-content: center;
+    display: block;
+    padding-right: 20rem;
+    padding-top: 10px;
+    padding-left: 20rem;
+}
+
+.footer_wrapper {
+    width: 100%;
+}
+
+.footer ul {
+    font-size: 12px;
+    list-style: none;
+    color: #86868b;
+    border-bottom: 1px solid gray;
+    text-align: inherit;
+}
+
+.footer ul li {
+    margin: 15px 0;
+    letter-spacing: 0.1px;
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+}
+
+.footer_links-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links-column-title {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer_links-column a {
+    font-size: 12px;
+    color: #515154;
+    margin-bottom: 12px;
+}
+
+.footer_more {
+    font-size: 13px;
+    color: #86868b;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.footer_more a {
+    color: #06c;
+    display: inline;
+}
+
+.footer_copyright {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #86868b;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 8rem;
+}
+
+.footer_copyright .links a {
+    padding: 0 1px;
+    color: #7d7d81;
+    border-left: 1px solid gray;
+    display: inline;
+    margin-left: .4rem;
+    padding-left: 1.4rem;
+}
+
+.footer_copyright .links a:nth-child(1) {
+    border: none;
+}
+
+/* responsive size */
+@media screen and (max-width: 1068px) {
+    .ipad {
+        background: url("images/hero/ipad/ipad medium.jpeg");
+    }
+
+    .ipad-pro {
+        background: url("images/hero/ipad pro/ipad pro medium.jpeg");
+    }
+
+    .tv4k {
+        background: url("images/hero/tv4k/tv medium.jpeg");
+    }
+
+    .hero {
+        height: 61rem;
+        background-size: auto 61.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title-heading {
+        font-size: 4.4rem;
+    }
+
+    .title-ipad{
+        padding-right: 6rem;
+    }
+
+    .title-sub-heading {
+        font-size: 2rem;
+    }
+
+    .cta-link:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .title.heading-tv4k {
+        height: 6.2rem;
+        background: url("") center no-repeat;
+        background-size: auto 6.2rem;
+    }
+
+    .title-dark {
+        font-size: 4.4rem;
+        text-align: center;
+        padding-top: 5.5rem;
+        line-height: 1.125;
+        padding-right: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
+            height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header.container {
+        padding: 0;
+    }
+
+    .ipad {
+        margin-top: 4.8rem;
+    }
+
+    .nav-list-larger {
+        display: none;
+    }
+
+    .nav-list {
+        margin-top: 0;
+    }
+
+    .nav-list-mobile {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-hidden {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .line-top {
+        margin-top: 3px;
+    }
+
+    .line-bottom {
+        margin-top: -.4rem;
+    }
+
+    .active .line-top {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .active .line-bottom {
+        margin-top: 0;
+        transform: rotate(- 45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active {
+        height: 100%;
+        background-color: #000;
+    }
+
+    .nav-link-apple {
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag {
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav.link {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    .active .nav-list-larger {
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .nav-list-larger .nav-item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .active .nav-list-larger .nav-item {
+        animation: fadeIn 1s ease-in;
+    }
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 735px) {
+
+    .ipad {
+        background: url("images/hero/ipad/ipad small.jpg");
+    }
+
+    .ipad-pro {
+        background: url("images/hero/ipad pro/ipad pro small.jpeg");
+    }
+
+    .tv-img {
+        background: url("images/hero/tv4k/remote small2x.jpeg")
+    }
+
+    .hero {
+        height: 50rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+       padding: 1.7rem;
+    }
+
+    .title-heading {
+        font-size: 3.2rem;
+    }
+
+    .title-sub-heading {
+        font-size: 1.9rem
+    }
+
+    .title-heading-tv4k {
+        font-size: 3.2rem;
+        margin-top: 30rem;
+    }
+
+    .title-dark {
+        font-size: 2rem;
+    }
+
+    .title-price {
+        font-size: 1.4rem;
+    }
+
+    .cta {
+        margin-top: .7rem;
+    }
+
+    .cta-pro {
+        margin-top: 1rem
+    }
+
+    .cta-ipad {
+        margin-top: .7rem;
+    }
+
+    .cta-link {
+        font-size: 1.7rem;
+    }
+
+    .cta-link-dark{
+        font-size: 1.7rem;
+    }
+
+    .cta-ipad-link {
+        font-size: 1.7rem;
+    }
+
+    .cta-link-darker:hover {
+        border-bottom: 1px solid #0070c9;
+    }
+
+    .cta-ipad-link:hover {
+        border-bottom: 1px solid #0070c9;
+    }
+
+    /* For Grid Gallery*/
+    #box1 {
+        background-image: url("images/grid/iphone14pro/i14 pro small.jpeg")
+    }
+
+    #box2 {
+        background-image: url("images/grid/iphone14/i14 small.jpeg")
+    }
+
+    #box3 {
+        background-image: url("images/grid/watch_ultra/watchultra small.jpeg")
+    }
+
+    #box4 {
+        background-image: url("images/grid/watch8/watch8 small.jpeg")
+    }
+
+    #box5 {
+        background-image: url("images/grid/airpod/airpod small.jpeg")
+    }
+
+    #box6 {
+        background-image: url("images/grid/card/card small.jpeg")
+    }
+
+    .category .box {
+        height: 50rem;
+        width: 100%;
+        background-size: auto 50rem;
+    }
+
+    .category {
+        display: grid;
+    }
+}
